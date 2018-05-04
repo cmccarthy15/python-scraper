@@ -12,3 +12,7 @@ soup = BeautifulSoup(r.content)
 for item in soup.find_all('a'):
   if item.parent.name == 'td':
     print(item.string)
+
+
+
+# if the url doesn't change, go to network and xhr and see the endopoints being hit
